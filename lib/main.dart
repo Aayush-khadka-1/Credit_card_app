@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/drawer.dart';
 import 'credit_card_widget.dart';
 
 void main() {
@@ -12,12 +13,13 @@ class MyApp extends StatelessWidget {
       title: 'UI_2',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        drawer: MyDrawer(),
         appBar: AppBar(
           backgroundColor: Color(0xFFFFD700),
           title: Text(
             'Account Details',
             style: TextStyle(
-              color: Colors.white,
+              // color: Colors.white,
               fontSize: 28,
               fontWeight: FontWeight.w700,
             ),
